@@ -8,7 +8,9 @@
         "type": "image/x-icon"
       }
     ],
-    "start_url": ".",
+"start_url": "/get-it-done/",
+"scope": "/get-it-done/",
+"id": "/get-it-done/",
     "display": "standalone",
     "theme_color": "#2563eb",
     "background_color": "#ffffff"

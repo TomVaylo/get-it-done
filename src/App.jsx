@@ -267,7 +267,9 @@ export default function App() {
                     </div>
                     <button 
                       onClick={(e) => deleteProject(p.id, e)} 
-                      className="opacity-0 group-hover:opacity-100 text-stone-300 hover:text-rose-500 transition p-0.5"
+                      title="Supprimer le projet"
+                      aria-label={`Supprimer le projet ${p.name}`}
+                      className="text-stone-300 hover:text-rose-500 active:text-rose-600 transition p-1 flex-shrink-0"
                     >
                       <Trash2 size={12} />
                     </button>
@@ -299,7 +301,7 @@ export default function App() {
               placeholder="Intitulé de la tâche..."
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
-              className="w-full text-sm font-medium text-stone-800 placeholder-stone-400 focus:outline-none bg-transparent"
+              className="w-full text-base font-medium text-stone-800 placeholder-stone-400 focus:outline-none bg-transparent"
             />
             
             <div className="flex items-center justify-between pt-2 border-t border-stone-100 gap-2 flex-wrap">
@@ -442,7 +444,9 @@ export default function App() {
 
                     <button
                       onClick={() => deleteTask(task.id)}
-                      className="opacity-0 group-hover:opacity-100 text-stone-300 hover:text-rose-500 transition p-1"
+                      title="Supprimer la tâche"
+                      aria-label={`Supprimer la tâche ${task.title}`}
+                      className="text-stone-300 hover:text-rose-500 active:text-rose-600 transition p-1"
                     >
                       <Trash2 size={15} />
                     </button>
